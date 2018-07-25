@@ -1,0 +1,21 @@
+<p>Hello</p>
+<p class="transformed">Hello</p>
+
+
+<style>
+
+    p {
+        width:50px;
+        height:50px;
+        background-color: #1abc9c;
+        color:#ecf0f1;
+        border: 2px solid #2c3e50;
+    }
+
+    p.transformed {
+        background-color: #3498db;
+        transform: scale(2, 0.5); /* the first parameter stands for height and the second for width, it scales the whole element twice in height and shrinks by half in width */
+        transform-origin: left top; /* the scaling starts from the left and top so there is no overlapping , if there is no transform-origin attribute added it starts from the center */
+    }
+
+</style>

@@ -1,0 +1,22 @@
+<p>Hello</p>
+<p class="transformed">Hello</p>
+
+
+<style>
+
+    p {
+        width: 50px;
+        height: 50px;
+        background-color: #e74c3c;
+        color: #ecf0f1;
+        border: 2px solid #2c3e50;
+    }
+
+    p.transformed {
+        background-color: #9b59b6;
+        transform: rotate(90deg) /* it rotates the selected element by 90 degrees */
+                   scale(0.5); /* and also shrinks it by half if there is no comma between trasnformation attributes */
+        transform-origin: right bottom;
+    }
+
+</style>

@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+<h1>This Button Does Nothing</h1>
+<button class="btn">Click Me</button>
+
+
+<style>
+
+    body{
+        background-color: #fcd04b;
+        font-family: Lato;
+        color:white;
+    }
+
+    h1{
+        text-align:center;
+        font-weight:1000; /* how fat is the button gonna be */
+    }
+
+    .btn{
+        outline:none;  /* remove default button outline that comes with brwoser */
+        border:none;  /* remove the boarder of the button */
+        cursor:pointer; /*  add pointer when you hover over the button */
+        display:block; /* ? */
+        position: relative; /* the position needs to be relative so we can manilpulate and move the button if we want to */
+        background-color:#fcad26;
+        font-size:16px;
+        font-weight: 300px;
+        color:white;
+        text-transform: uppercase; /* transform all the letters to uppercase */
+        letter-spacing: 2px;  /* spacing between the letters */
+        padding:25px 80px; /* the first number represents padding top and bottom and the second number represents padding right and left */
+        margin:0 auto; /* center the button */
+        border-radius: 20px; /* round the edges of the button */
+        box-shadow: 0 6px #efe424; /* first number represents the x offest, so -5px will have shadow on the left side and 5px will have the shadow on the right side while the second number represents the y offest where 20px would have the shadow going down while the -20px would have the shadow going up.Finally we have the collor of the shadow as the third parameter  */
+    }
+
+    .btn:hover{
+        box-shadow: 0 4px #efe424;
+        top : 2px; /* it shifts the button down 2px or shifts it up if -2px because of the position relative attribute we already declared */
+    }
+
+    .btn:active{
+        box-shadow: none; /* remove the box shadow while clicking the button*/
+        top:6px; /* shift the button down for 6px */
+    }
+    
+</style>
