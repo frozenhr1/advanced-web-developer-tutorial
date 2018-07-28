@@ -1,0 +1,1 @@
+Since the newer css properties like for example 'rotate' might not work on all browsers, there is a css autoprefixer which adds a prefix like -webkit- that makes this css property work on other browsers.There are plenty autoprefixers online, for example : https://autoprefixer.github.io/ .

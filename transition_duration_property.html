@@ -1,0 +1,32 @@
+<p class="box">BORING</p>
+<p class="animated box">ANIMATED</p>
+
+
+<style>
+
+    .box {
+        background: #9559b6;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: white;
+        font-size: 17px;
+        border-radius: 20px;
+    }
+
+    .box:hover {
+        background: #e74c3c;
+        transform-origin: top left;
+        transform:scale(2);
+        opacity: 0.5; /* opacity will also be transformed withing 2 seconds on the .animated box because the tranition-duration property */
+        border-radius: 50px;
+    }
+
+    p.animated {
+        transition-duration: 5s, 1s; /* the first transition property(background) takes 5 seconds and the second one(border-radius) takes 1 second */
+        transition-property: background, border-radius; /* which property is being transitioned thorugh time, the first one is gonna take 5 seconds and the second one 1 second */
+    }
+
+
+</style>

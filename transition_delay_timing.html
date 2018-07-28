@@ -1,0 +1,32 @@
+<!-- https://easings.net/ -->
+
+<p class="box">BORING</p>
+<p class="animated box">ANIMATED</p>
+
+
+<style>
+
+    .box {
+        background: #9559b6;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: white;
+        font-size: 17px;
+        border-radius: 20px;
+    }
+
+
+    .box:hover {
+        transform: translateX(300px);
+    }
+    p.animated {
+        /*transition-property: transform;
+        transition-duration: 2s;
+        transition-timing-function: ease-in; 
+        transition-delay: 1s;*/
+        transition:transform 2s ease-in 1s; /* all the 4 properties above in one line, ( property, duration, function, delay ) */
+    }
+
+</style>
